@@ -1,3 +1,5 @@
+import { PropTypes } from "prop-types";
+
 export default function Square({ value }) {
   return (
     <>
@@ -5,3 +7,7 @@ export default function Square({ value }) {
     </>
   );
 }
+
+Square.propTypes = {
+  value: PropTypes.string.isRequired,
+};
