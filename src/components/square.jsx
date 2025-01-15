@@ -1,13 +1,9 @@
-import { PropTypes } from "prop-types";
-
-export default function Square({ value }) {
+export default function Square({ value, onSquareClick }) {
   return (
     <>
-      <button className="square">{value}</button>
+      <button className="square" onClick={onSquareClick}>
+        {value}
+      </button>
     </>
   );
 }
-
-Square.propTypes = {
-  value: PropTypes.string.isRequired,
-};
